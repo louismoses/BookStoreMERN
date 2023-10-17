@@ -14,16 +14,16 @@ app.use(express.json());
 // middleware for handling CORS Policy
 
 // 1. allow all
-// app.use(cors());
+app.use(cors());
 
 // 2. allow custom origin
-app.use(
-  cors({
-    origin: "http://localhost:3000/",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: "http://localhost:3000/",
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     allowedHeaders: ["Content-Type"],
+//   })
+// );
 
 app.use("/books", booksRoute);
 
