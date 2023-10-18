@@ -46,7 +46,28 @@ const CreateBooks = () => {
             onChange={(e) => setTitle(e.target.value)}
             className="border-2 border-gray-500 px-4 py-2 w-full"
           />
+          <label htmlFor="" className="text-xl mr-4 text-gray-500">
+            Author
+          </label>
+          <input
+            type="text"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            className="border-2 border-gray-500 px-4 py-2 w-full"
+          />
+          <label htmlFor="" className="text-xl mr-4 text-gray-500">
+            Publish Year
+          </label>
+          <input
+            type="text"
+            value={publishYear}
+            onChange={(e) => setPublishYear(e.target.value)}
+            className="border-2 border-gray-500 px-4 py-2 w-full"
+          />
         </div>
+        <button className="p-2 bg-sky-300 m-8" onClick={handelSaveBook}>
+          Save
+        </button>
       </div>
     </div>
   );
